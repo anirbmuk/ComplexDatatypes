@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="blog.anirbanm.cd.view" ClientType="Generic">
+  <pageMap>
+    <page path="/cdtest.jspx" usageId="blog_anirbanm_cd_view_cdtestPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="blog_anirbanm_cd_view_cdtestPageDef" path="blog.anirbanm.cd.view.pageDefs.cdtestPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="CdModuleDataControl" Package="blog.anirbanm.cd.model.am"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="CdModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

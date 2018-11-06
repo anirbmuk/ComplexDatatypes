@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="cdtestPageDef"
+                Package="blog.anirbanm.cd.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+  </executables>
+  <bindings>
+    <methodAction id="acceptAndModifyEmployee" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="acceptAndModifyEmployee" IsViewObjectMethod="false" DataControl="CdModuleDataControl"
+                  InstanceName="bindings.acceptAndModifyEmployee.dataControl.dataProvider"
+                  ReturnName="data.CdModuleDataControl.methodResults.acceptAndModifyEmployee_acceptAndModifyEmployee_dataControl_dataProvider_acceptAndModifyEmployee_result">
+      <NamedData NDName="employee" NDType="blog.anirbanm.cd.types.Employees"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

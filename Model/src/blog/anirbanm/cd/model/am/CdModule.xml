@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CdModule"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ComponentClass="blog.anirbanm.cd.model.am.CdModuleImpl"
+  ClearCacheOnRollback="true"
+  ComponentInterface="blog.anirbanm.cd.model.am.common.CdModule">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="blog.anirbanm.cd.model.am.CdModule_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="acceptAndModifyEmployee"
+      MethodName="acceptAndModifyEmployee">
+      <Return
+        Name="_return_type_"
+        Type="blog.anirbanm.cd.types.Employees"/>
+      <Parameter
+        Name="employee"
+        Type="blog.anirbanm.cd.types.Employees"/>
+    </Method>
+  </ClientInterface>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="blog.anirbanm.cd.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>
